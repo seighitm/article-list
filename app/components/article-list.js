@@ -74,8 +74,9 @@ export default class ArticleListComponent extends Component {
         const selectedCategory = event.target.value;
         this.selectedCategory = selectedCategory;
         this.articlesToShow = 6;
-
-        updateQueryParams({ category: selectedCategory });
+        console.log(selectedCategory);
+        
+        updateQueryParams(this.router, { category: selectedCategory });
     }
 
     @action
@@ -83,8 +84,9 @@ export default class ArticleListComponent extends Component {
         const selectedDate = event.target.value;
         this.selectedDate = selectedDate;
         this.articlesToShow = 6;
-
-        updateQueryParams({ date: selectedDate });
+        console.log(selectedDate);
+        
+        updateQueryParams(this.router, { date: selectedDate });
     }
 
     @action
@@ -97,14 +99,25 @@ export default class ArticleListComponent extends Component {
     updateStartDate(event) {
         this.startDate = event.target.value;
         this.articlesToShow = 6;
-        updateQueryParams({ startDate: this.startDate });
+        updateQueryParams(this.router, { startDate: this.startDate });
     }
 
     @action
     updateEndDate(event) {
         this.endDate = event.target.value;
         this.articlesToShow = 6;
-        updateQueryParams({ endDate: this.endDate });
+        updateQueryParams(this.router, { endDate: this.endDate });
+    }
+
+    @action
+    resetFilters() {
+        this.selectedCategory = '';
+        this.searchTerm = '';
+        this.selectedDate = '';
+        this.selectedAuthor = '';
+        this.startDate = '';
+        this.endDate = '';
+        this.router.transitionTo({ queryParams: {  } });
     }
 
     @action

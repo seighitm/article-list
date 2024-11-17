@@ -11,6 +11,11 @@ export function parseQueryParams(url) {
 }
 
 export function updateQueryParams(router, params) {
+    console.log(params);
+    
     const currentParams = parseQueryParams(router.currentURL);
+
+    console.log(currentParams);
+    
     router.transitionTo({ queryParams: { ...currentParams, ...params } });
 }

@@ -9,14 +9,17 @@ module.exports = function (environment) {
     EmberENV: {
       EXTEND_PROTOTYPES: false,
       FEATURES: {
-        // Here you can enable experimental features on an ember canary build
-        // e.g. EMBER_NATIVE_DECORATOR_SUPPORT: true
       },
     },
-
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
+      baseURL: 'http://localhost:4200',
+    },
+    fastboot: {
+      hostWhitelist: [
+        'http://127.0.0.1:4200',   
+        'http://localhost',   
+        'http://localhost:7784', 
+      ]
     },
   };
 

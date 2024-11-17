@@ -7,9 +7,9 @@
             <Tag @class="!text-sm" @label="Autor" @value={{@article.author}} />
             <Tag @class="!text-sm" @label="Categorie" @value={{@article.category}} />
             <Tag @class="!text-sm" @label="Data" @value={{@article.date}} />
-            {{!-- <LinkTo id={{@article.id}} @route="articles" @model={{@article}} class="button" data-variant="default">
+            <LinkTo id={{@article.id}} @route="article" @model={{@article}} class="button" data-variant="default">
                 Details
-            </LinkTo> --}}
+            </LinkTo>
         </div>
     </div>
 </div>

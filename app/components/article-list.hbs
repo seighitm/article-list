@@ -3,7 +3,7 @@
         @selectedAuthor={{this.selectedAuthor}} @startDate={{this.startDate}} @endDate={{this.endDate}}
         @onSearch={{this.updateSearchTerm}} @onCategoryChange={{this.updateCategory}}
         @onAuthorFilter={{this.updateAuthorFilter}} @onStartDateChange={{this.updateStartDate}}
-        @onEndDateChange={{this.updateEndDate}} />
+        @onEndDateChange={{this.updateEndDate}} @resetFilters={{this.resetFilters}} />
 
     <div class="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 grid justify-center gap-2">
         {{#each this.filteredArticles as |article|}}

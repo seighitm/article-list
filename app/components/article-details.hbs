@@ -1,0 +1,20 @@
+<div class="rounded-lg border bg-card text-card-foreground shadow-sm  overflow-hidden mx-auto w-full">
+    <div class="relative w-full h-[200px] sm:h-[300px] md:h-[400px]">
+        <img class="absolute w-full h-[200px] sm:h-[300px] md:h-[400px] object-cover" src="/images/{{@article.img}}"
+            alt="{{@article.title}}">
+        <CopyLink @class="!absolute bottom-4 right-4" @value={{concat 'http://localhost:4200' "/article/"
+            @article.id}} />
+    </div>
+
+    <div class="'flex justify-between flex-col ">
+        <div class="px-6 py-4">
+            <div class="font-bold text-2xl mb-2">{{@article.title}}</div>
+            <p class="text-md text-muted-foregroun min-h-[40px]">{{@article.content}}</p>
+        </div>
+        <div class="px-6 pt-1 pb-2 flex flex-col md:flex-row gap-2 mt-auto">
+            <Tag @label="Autor" @value={{@article.author}} />
+            <Tag @label="Categorie" @value={{@article.category}} />
+            <Tag @label="Data" @value={{@article.date}} />
+        </div>
+    </div>
+</div>

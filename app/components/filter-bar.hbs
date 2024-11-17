@@ -8,7 +8,7 @@
             class="p-2 rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white w-full"
         />
     </div>
-    <div class="flex gap-4 flex-col md:flex-row">
+    <div class="flex gap-4 flex-col lg:flex-row">
         <select 
             class="w-full md:min-w-[185px] p-2 rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
             value={{@selectedCategory}} 
@@ -27,22 +27,26 @@
             placeholder="Filter by Author..." 
             value={{@selectedAuthor}} 
             {{on "input" (fn @onAuthorFilter value="target.value")}}
-            class="w-full md:w-[185px] p-2 rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+            class="w-full lg:w-[185px] p-2 rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
         />
 
-        <div class="flex space-x-4 md:w-full">
+        <div class="flex gap-4 md:w-full flex-col md:flex-row">
             <input 
                 type="date" 
                 value={{@startDate}} 
                 {{on "change" (fn @onStartDateChange value="target.value")}}
-                class="w-full md:w-[140px] p-2 rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+                class="w-full lg:w-[140px] p-2 rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
             />
             <input 
                 type="date" 
                 value={{@endDate}} 
                 {{on "change" (fn @onEndDateChange value="target.value")}}
-                class="w-full md:w-[140px] p-2 rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+                class="w-full lg:w-[140px] p-2 rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
             />
         </div>
+
+        <button {{on "click" (fn @resetFilters)}} class="button w-full" data-variant="destructive" >
+            Reset 
+        </button>
     </div>
 </div>
