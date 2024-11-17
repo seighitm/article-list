@@ -1,0 +1,10 @@
+services:
+  articles-app:
+    build:
+      context: .
+    ports:
+      - "4200:4200"
+    volumes:
+      - .:/app
+    environment:
+      - NODE_ENV=development
