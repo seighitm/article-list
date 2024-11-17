@@ -1,0 +1,110 @@
+[
+  {
+    "id": "1",
+    "img": "img1.jpg",
+    "title": "How to Learn Ember.js",
+    "content": "Ember.js is a JavaScript framework for building ambitious web applications. It provides a strong foundation for developing applications with rich interactivity, routing, and state management. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet dolor vitae nunc tempor vulputate. Vivamus id augue ut augue maximus tempus.",
+    "category": "Programming",
+    "author": "Ion Popescu",
+    "date": "2024-11-01"
+  },
+  {
+    "id": "2",
+    "img": "img2.jpeg",
+    "title": "Introduction to Tailwind CSS",
+    "content": "Tailwind CSS is a utility-first CSS framework for creating custom designs. It encourages a more flexible approach to building layouts. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Integer sollicitudin, augue ac facilisis consequat, lorem lectus eleifend lorem, id cursus erat augue sed libero.",
+    "category": "Design",
+    "author": "Maria Ionescu",
+    "date": "2024-10-15"
+  },
+  {
+    "id": "3",
+    "img": "img3.jpg",
+    "title": "Guide to React.js",
+    "content": "React.js is a JavaScript library for building user interfaces. It enables developers to create interactive UIs with ease and offers a rich ecosystem for development. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed eros ipsum. Cras sit amet nulla et metus accumsan feugiat non eu eros.",
+    "category": "Programming",
+    "author": "Andrei Popa",
+    "date": "2024-09-22"
+  },
+  {
+    "id": "4",
+    "img": "img4.jpg",
+    "title": "Introduction to Docker",
+    "content": "Docker is a platform for developing, shipping, and running applications in isolated containers. It simplifies the process of managing environments for applications. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ut felis dui. Etiam tincidunt sollicitudin libero, ac varius libero suscipit a.",
+    "category": "DevOps",
+    "author": "Cristina Voicu",
+    "date": "2024-08-19"
+  },
+  {
+    "id": "5",
+    "img": "img5.jpg",
+    "title": "Python Fundamentals for Beginners",
+    "content": "Python is an easy-to-learn programming language widely used for data analysis, web development, and automation. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at ligula sit amet nulla tincidunt eleifend. In auctor libero a turpis eleifend, et tincidunt risus varius.",
+    "category": "Programming",
+    "author": "Lucian Marin",
+    "date": "2024-07-10"
+  },
+  {
+    "id": "6",
+    "img": "img6.png",
+    "title": "About Microservices Architecture",
+    "content": "Microservices architecture is a software architecture style that structures applications as a collection of loosely coupled services. Each service can be developed, deployed, and scaled independently. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin ligula ac eros tempus, sed vehicula nisl pharetra.",
+    "category": "DevOps",
+    "author": "Iulia Georgescu",
+    "date": "2024-06-30"
+  },
+  {
+    "id": "7",
+    "img": "img7.jpg",
+    "title": "Responsive Design in CSS",
+    "content": "Responsive design allows websites to adapt to different screen sizes. CSS media queries are used to change the layout based on the device's viewport. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur imperdiet bibendum est, vel elementum mi tincidunt vel. Ut accumsan tincidunt libero.",
+    "category": "Design",
+    "author": "Radu Luca",
+    "date": "2024-05-25"
+  },
+  {
+    "id": "8",
+    "img": "img8.jpg",
+    "title": "How to Use GraphQL for APIs",
+    "content": "GraphQL is a query language for APIs that allows clients to request only the data they need. It provides flexibility and efficiency in data retrieval. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet sapien sit amet leo consectetur lobortis. Integer sit amet mi vitae arcu tincidunt pretium.",
+    "category": "Programming",
+    "author": "Ana Popa",
+    "date": "2024-04-18"
+  },
+  {
+    "id": "9",
+    "img": "img9.jpg",
+    "title": "Creating a Website with Next.js",
+    "content": "Next.js is a React framework that enables server-side rendering for web applications. It allows for faster page loads and SEO optimization. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vehicula, eros in blandit fermentum, odio sapien laoreet augue, sit amet auctor ante arcu eu neque.",
+    "category": "Programming",
+    "author": "Vlad Dumitru",
+    "date": "2024-03-12"
+  },
+  {
+    "id": "10",
+    "img": "img10.webp",
+    "title": "Introduction to MongoDB",
+    "content": "MongoDB is a NoSQL database used for storing semi-structured and unstructured data. It provides flexibility in handling large datasets. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed et nulla sed leo auctor tempor. Morbi tristique nisl eget nunc laoreet, ut fermentum purus maximus.",
+    "category": "Databases",
+    "author": "Georgiana Stan",
+    "date": "2024-02-20"
+  },
+  {
+    "id": "11",
+    "img": "img11.webp",
+    "title": "What is Kubernetes and How to Use It",
+    "content": "Kubernetes is an open-source system for automating the deployment, scaling, and management of containerized applications. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam purus et arcu eleifend, at dapibus lorem varius. Donec vestibulum vehicula dui ac condimentum.",
+    "category": "DevOps",
+    "author": "Florin Bălan",
+    "date": "2024-01-15"
+  },
+  {
+    "id": "12",
+    "img": "img12.jpg",
+    "title": "How to Secure Your Web Applications",
+    "content": "Web application security is essential for protecting user data and preventing attacks. Best practices include encryption and regular vulnerability assessments. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt, tortor in dapibus congue, arcu justo facilisis odio, ac consectetur erat risus et felis.",
+    "category": "Security",
+    "author": "Ioana Ionescu",
+    "date": "2023-12-05"
+  }
+]

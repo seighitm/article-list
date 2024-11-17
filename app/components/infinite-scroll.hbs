@@ -1,0 +1,8 @@
+<div class="invisible" {{did-insert this.setupObserver}}></div>
+{{#if @isLoading}}
+    <div class="text-center my-4">
+        <p class="text-gray-600 dark:text-gray-400">
+            <Loader />
+        </p>
+    </div>
+{{/if}}

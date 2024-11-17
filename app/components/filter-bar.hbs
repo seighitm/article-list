@@ -1,0 +1,48 @@
+<div class="rounded-lg border bg-card text-card-foreground shadow-sm p-2">
+    <div class="mb-4 flex flex-col md:flex-row align-middle justify-between gap-5">
+        <input 
+            type="text" 
+            placeholder="Search Articles..." 
+            value={{@searchTerm}} 
+            {{on "input" (fn @onSearch value="target.value")}}
+            class="p-2 rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white w-full"
+        />
+    </div>
+    <div class="flex gap-4 flex-col md:flex-row">
+        <select 
+            class="w-full md:min-w-[185px] p-2 rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+            value={{@selectedCategory}} 
+            {{on "change" (fn @onCategoryChange value="target.value")}}
+        >
+            <option value="">All Categories</option>
+            <option value="Programming">Programming</option>
+            <option value="Design">Design</option>
+            <option value="DevOps">DevOps</option>
+            <option value="Databases">Databases</option>
+            <option value="Security">Security</option>
+        </select>
+
+        <input 
+            type="text" 
+            placeholder="Filter by Author..." 
+            value={{@selectedAuthor}} 
+            {{on "input" (fn @onAuthorFilter value="target.value")}}
+            class="w-full md:w-[185px] p-2 rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+        />
+
+        <div class="flex space-x-4 md:w-full">
+            <input 
+                type="date" 
+                value={{@startDate}} 
+                {{on "change" (fn @onStartDateChange value="target.value")}}
+                class="w-full md:w-[140px] p-2 rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+            />
+            <input 
+                type="date" 
+                value={{@endDate}} 
+                {{on "change" (fn @onEndDateChange value="target.value")}}
+                class="w-full md:w-[140px] p-2 rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 dark:text-white"
+            />
+        </div>
+    </div>
+</div>

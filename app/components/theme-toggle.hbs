@@ -1,0 +1,8 @@
+<button id={{@id}} class="button !p-0 ml-auto" type="button" data-variant="default" data-size="icon" {{on 'click'
+    this.toggleTheme}}>
+    {{#if (compare this.theme.theme '===' 'light')}}
+    <Icons::SunIcon />
+    {{else}}
+    <Icons::MoonIcon />
+    {{/if}}
+</button>

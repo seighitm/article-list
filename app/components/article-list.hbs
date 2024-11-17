@@ -1,0 +1,15 @@
+<div class="space-y-4" {{on "scroll" this.onScroll}}>
+    <FilterBar @searchTerm={{this.searchTerm}} @selectedCategory={{this.selectedCategory}}
+        @selectedAuthor={{this.selectedAuthor}} @startDate={{this.startDate}} @endDate={{this.endDate}}
+        @onSearch={{this.updateSearchTerm}} @onCategoryChange={{this.updateCategory}}
+        @onAuthorFilter={{this.updateAuthorFilter}} @onStartDateChange={{this.updateStartDate}}
+        @onEndDateChange={{this.updateEndDate}} />
+
+    <div class="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 grid justify-center gap-2">
+        {{#each this.filteredArticles as |article|}}
+        <ArticleCard @article={{article}} />
+        {{/each}}
+    </div>
+
+    <InfiniteScroll @isLoading={{this.isLoading}} @onLoadMore={{this.loadMoreArticles}} />
+</div> 
