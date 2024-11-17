@@ -2,9 +2,8 @@
     <div class="relative w-full h-[200px] sm:h-[300px] md:h-[400px]">
         <img class="absolute w-full h-[200px] sm:h-[300px] md:h-[400px] object-cover" src="/images/{{@article.img}}"
             alt="{{@article.title}}">
-        <CopyLink @class="!absolute bottom-4 right-4" @value={{concat 'http://localhost:4200' "/article/"
-            @article.id}} />
-    </div>
+        <CopyLink @class="!absolute bottom-4 right-4" @value={{this.apiUrl}} />
+    </div> 
 
     <div class="'flex justify-between flex-col ">
         <div class="px-6 py-4">

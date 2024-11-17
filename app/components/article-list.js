@@ -75,7 +75,7 @@ export default class ArticleListComponent extends Component {
         this.selectedCategory = selectedCategory;
         this.articlesToShow = 6;
         console.log(selectedCategory);
-        
+
         updateQueryParams(this.router, { category: selectedCategory });
     }
 
@@ -85,7 +85,7 @@ export default class ArticleListComponent extends Component {
         this.selectedDate = selectedDate;
         this.articlesToShow = 6;
         console.log(selectedDate);
-        
+
         updateQueryParams(this.router, { date: selectedDate });
     }
 
@@ -117,7 +117,7 @@ export default class ArticleListComponent extends Component {
         this.selectedAuthor = '';
         this.startDate = '';
         this.endDate = '';
-        this.router.transitionTo({ queryParams: {  } });
+        this.router.transitionTo({ queryParams: {} });
     }
 
     @action
